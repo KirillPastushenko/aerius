@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('/assets/fonts/Geometria.eot');
+	src: local('Geometria'),
+		url('/assets/fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Geometria.woff') format('woff'),
+		url('/assets/fonts/Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('/assets/fonts/Geometria-Medium.eot');
+	src: local('Geometria Medium'), local('Geometria-Medium'),
+		url('/assets/fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Geometria-Medium.woff') format('woff'),
+		url('/assets/fonts/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('/assets/fonts/Geometria-Bold.eot');
+	src: local('Geometria Bold'), local('Geometria-Bold'),
+		url('/assets/fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Geometria-Bold.woff') format('woff'),
+		url('/assets/fonts/Geometria-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CenturyGothicRegular';
+	src: url('/assets/fonts/CenturyGothicRegular.eot');
+	src: local('CenturyGothicRegular'), local('CenturyGothicRegular'),
+		url('/assets/fonts/CenturyGothicRegular.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/CenturyGothicRegular.woff') format('woff'),
+		url('/assets/fonts/CenturyGothicRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CenturyGothicBold';
+	src: url('/assets/fonts/CenturyGothicBold.eot');
+	src: local('CenturyGothicBold'), local('CenturyGothicBold'),
+		url('/assets/fonts/CenturyGothicBold.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/CenturyGothicBold.woff') format('woff'),
+		url('/assets/fonts/CenturyGothicBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

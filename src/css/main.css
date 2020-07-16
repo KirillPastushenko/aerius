@@ -1,0 +1,95 @@
+@import url("fonts.css");
+*,:after,:before{padding: 0;margin: 0;box-sizing: border-box;}
+body{background-color:#f2f5ff; font-family: 'Geometria',sans-serif;	font-weight: normal;font-style: normal;font-size: 30px;}
+h1{color:#063978}
+#top-head{background-image: linear-gradient( 14deg, rgb(217,27,26) 0%, rgb(183,113,123) 13%, rgb(148,198,220) 79%);clip-path: url(#top-head-clip);width: 500px; height: 650px;}
+section{padding: 0 calc(50vw - 800px);}
+
+.red{color:#d91b1a}
+p{max-width: 50%;}
+p.medium{font-weight: 500;}
+p.bold{font-weight: bold;}
+p.align-center{text-align: center;display: block;margin: 0 auto;;}
+p a{font-family: 'CenturyGothicBold';color:#d91b1a}
+h2{text-transform: uppercase;font-weight: bold;font-size: 72px;line-height: 1.1;}
+h3{text-transform: uppercase;font-weight: bold;font-size: 39px;}
+h2>.red{font-size: 87px;}
+
+
+
+
+
+path{-webkit-transition: fill 400ms ease;-o-transition: fill 400ms ease;transition: fill 400ms ease;}
+.heptagons-list{position: relative;width: 100%; height: 0;}
+.heptagons-list svg{width: 100%; max-width: 15.95%;position: absolute;}
+.heptagons-list .desc{opacity: 0;pointer-events: none;-webkit-transition: .3s;-o-transition: .3s;transition: .3s;top: calc(50% - 140px);left: 0;position: absolute;text-align: center;width: 100%;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.heptagons-list svg:hover .heptagon1{opacity: 0}
+.heptagons-list svg:hover .heptagon2{opacity: 1}
+.heptagons-list svg:hover+.desc{opacity: 1}
+.heptagons-list svg.active .heptagon1{opacity: 0}
+.heptagons-list svg.active .heptagon2{opacity: 1}
+.heptagons-list svg.active+.desc{opacity: 1}
+.heptagon1{opacity: 1;transition: .3s;}
+.heptagon2{opacity: 0;transition: .3s;}
+.heptagon-type1 .icon{fill:#829daa}
+.heptagon-type2 .icon{fill:#b0dded}
+.heptagon-type1:hover .icon{fill:#d91b1a}
+.heptagon-type2:hover .icon{fill:#d91b1a}
+.heptagon-type1.active .icon{fill:#d91b1a} 
+.heptagon-type2.active .icon{fill:#d91b1a}
+
+.section-dark{background-color:#061c29;color:#fff}
+
+.heptagon-type1{
+    --color-1:#c3d8e8;
+    --color-2:#c3d8e8;
+    --color-3:#a9c7d6;
+    --opacity-1: 1;
+}
+
+.heptagon-type2{
+    --color-1:#c3d8e8;
+    --color-2:#c3d8e8;
+    --color-3:#a9c7d6;
+    --opacity-1: 0.39;
+}
+
+.heptagon-type1:hover,
+.heptagon-type2:hover{
+    --color-1:#d91b1a;
+    --color-2:#ddc7cb;
+    --color-3:#d91b1a;
+}
+
+
+#heptagons1{padding-top: 70%;}
+#heptagons1 [data-id="1"] {top:67%;left: 22.27%;}
+#heptagons1 [data-id="2"] {top:36.5%;left: 79.59%;}
+#heptagons1 [data-id="3"] {top:7%;left: 22.3%;}
+#heptagons1 [data-id="4"] {top:67%;left: 65%;}
+#heptagons1 [data-id="5"] {top:67%;left: 44%;}
+#heptagons1 [data-id="6"] {top:7%;left: 65%;}
+#heptagons1 [data-id="7"] {top:7%;left: 44%;}
+#heptagons1 [data-id="8"] {top:36.7%;left: 7.7%;}
+
+#heptagons2{padding-top: 39%;}
+#heptagons2 [data-id="1"] {top:43.9%;left: 31.27%;}
+#heptagons2 [data-id="2"] {top:43.9%;left: 57.8%;}
+
+#heptagons3{padding-top: 60%;}
+#heptagons3 [data-id="1"] {top:67%;left: 22.27%;}
+#heptagons3 [data-id="2"] {top:40%;left: 78%;}
+#heptagons3 [data-id="3"] {top:40%;left: 9.3%;}
+#heptagons3 [data-id="4"] {top:67%;left: 65%;}
+#heptagons3 [data-id="5"] {top:67%;left: 44%;}
+
+#heptagons4{padding-top: 60%;}
+#heptagons4 [data-id="1"] {top:67%;left: 22.27%;}
+#heptagons4 [data-id="2"] {top:36.5%;left: 79.59%;}
+#heptagons4 [data-id="3"] {top:7%;left: 22.3%;}
+#heptagons4 [data-id="4"] {top:67%;left: 65%;}
+#heptagons4 [data-id="5"] {top:67%;left: 44%;}
+ 
+
+
+
