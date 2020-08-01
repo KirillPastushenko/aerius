@@ -1,17 +1,17 @@
 <template>
     <div>
-        <div v-for="(item, index) in items" 
-             v-bind:class="{active: activeItem === index}" 
-             v-bind:key="index"
-             v-on:click.prevent="activeItem = index">
-            <svg data-id="1" class="heptagon-type1 active" viewBox="0 0 249 242" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+        <div v-for="(item, index) in filteredHeptagons"
+             :class="{active: activeItem === index}" 
+             :key="index"
+             @mouseover="activeItem = index">
+            <svg :data-id="item.id" :class="`heptagon-type${item.type}`" viewBox="0 0 249 242" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
                 <use class="heptagon1" xlink:href="#heptagon1"/>
                 <use class="heptagon2" xlink:href="#heptagon2"/>
-                <path class="icon" v-bind:d="item.icon" fill-rule="nonzero"/>
+                <path class="icon" :d="item.icon"  />
             </svg>
             <div class="desc">
                 <h3 class="red angle-tl angle-br">{{ item.title }}</h3>
-                <p>{{ item.description }} </p>
+                <p v-html="item.description"></p>
             </div>
         </div>
     </div>
@@ -20,18 +20,21 @@
 <script>
     import * as heptagonsData from './heptagons-data';
     export default {
+        props: ['group'],
         data(){
             return {
-                activeItem: null,
-                items:heptagonsData
+                activeItem: 0,
+                items:heptagonsData.heptagonsData
             }
         }, 
-        created (){
-            console.log(this.items.heptagonsData)
+        computed: {
+            filteredHeptagons: function () {
+                return this.items.filter(item => { 
+                    return  this.group === item.group;
+                })
+            }
         }
     }
 </script>
 
-<style lang="scss" scoped>
-    h1{color:rgb(24, 1, 1)}
-</style>
+<style lang="scss" scoped></style>
