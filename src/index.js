@@ -86,3 +86,4 @@ gsap.to('.circles-red circle:nth-of-type(3n)', {scale:1.5,transformOrigin: "50% 
 
  const tl2 = gsap.timeline({});
  tl2.staggerTo("#top-head path", 5, {display:'initial',ease:'CubicIn.ease'}, 0.0025);
+

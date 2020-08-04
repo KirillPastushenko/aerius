@@ -6,10 +6,10 @@ module.exports = {
      //       preset: [
      //           'default', {
      //               discardComments:{
-      //                  removeAll:true,
-      //              }
-      //          }
-     //       ]
+     //                   removeAll:true,
+     //               }
+     //           }
+     //      ]
      //   })
 
     ]

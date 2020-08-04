@@ -70,6 +70,7 @@ ul li:before{content:""; position: absolute;background-image: url("data:image/sv
 
 #sec5 h2{margin-top: -43px;}
 #sec5 .text-wrap{max-width: 728px;}
+#sec5 .img-wrap{width: 914px;}
 #sec5 .bold.align-center{margin: 8% auto 0 auto;}
 #sec5-hands{width: 84%; margin: -19% 0 10% 6%;}
 #sec5-dots1{width: 74%;margin: -13% 0 15% -1%;}
@@ -78,7 +79,6 @@ ul li:before{content:""; position: absolute;background-image: url("data:image/sv
 #sec5-dots2{width: 82%; margin: -16% 0 14% -3%;}
 #sec5-shema{width: 66%; margin: -16% 0 0 28%;}
 
-
 #sec6 .wave{top: -856px;}
 #sec6{margin-top: -173px;background-color: #f2f5ff;}
 #sec6 .img-wrap img{width: 100%}
@@ -86,7 +86,7 @@ ul li:before{content:""; position: absolute;background-image: url("data:image/sv
 #sec6 .text-wrap{width: 46.55%;padding-right: 8%;}
 #sec6 h2{font-size: 87px;margin: 0.46em 0 0.7em 0;}
 #sec6 h2.slogan{text-align: center;font-size: 73px;}
-
+#sec6-dots{position: absolute;bottom: -7%;width: 84.2%;right: 50%;pointer-events: none;max-width: 1616px; transform: translateX(58%);}
 
 path{-webkit-transition: fill 400ms ease;-o-transition: fill 400ms ease;transition: fill 400ms ease;}
 .heptagons-list{position: relative;width: 100%; height: 0;}
@@ -175,7 +175,9 @@ path{-webkit-transition: fill 400ms ease;-o-transition: fill 400ms ease;transiti
 .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: #d91b1a;}
 .swiper-button-next::after, 
 .swiper-button-prev::after{font-size: 31px;color: #d91b1a;}
-
+.swiper-slide {flex-shrink: 0; width: 100%;height: 100%;position: relative;transition-property: transform;}
+.swiper-wrapper {position: relative;width: 100%;height: 100%;z-index: 1;display: flex; transition-property: transform; box-sizing: content-box;}
+.swiper-container {margin-left: auto;margin-right: auto;position: relative;overflow: hidden;list-style: none;padding: 0;padding-bottom: 0px;z-index: 1;}
 
 @media(max-width:1920px){
     body{font-size: 1.563vw;} 
@@ -214,7 +216,8 @@ path{-webkit-transition: fill 400ms ease;-o-transition: fill 400ms ease;transiti
     #sec4-dots1 {width: 26.094vw;right: 2.188vw; margin-top: -23.542vw;} 
     #sec5 {padding-top: 41.823vw;padding-bottom: 44.635vw;} 
     #sec5 h2{margin-top: -2.240vw;} 
-    #sec5 .text-wrap{max-width: 37.917vw;} 
+    #sec5 .text-wrap{max-width: 37.917vw;}
+    #sec5 .img-wrap{width: 47.604vw;}
     #sec6 .wave{top: -44.583vw;} 
     #sec6{margin-top: -9.010vw;} 
     #sec6 h2{font-size: 4.531vw;} 
