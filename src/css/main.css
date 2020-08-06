@@ -234,3 +234,7 @@ path{-webkit-transition: fill 400ms ease;-o-transition: fill 400ms ease;transiti
     .swiper-button-next::after, .swiper-button-prev::after{font-size: 1.615vw;} 
 }
 
+@media(max-width:768px){
+    #heptagons1{height: 300px;padding-top: 0;}
+    #heptagons1 svg{position: relative!important; top:initial!important; left:initial!important}
+}

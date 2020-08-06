@@ -6,7 +6,7 @@ import { gsap, TimelineMax, TweenMax, Linear } from 'gsap';
 import ScrollMagic from 'scrollmagic';
 import ScrollMagicGSAP from './js/animation.gsap';
 
-//import VueAwesomeSwiper from 'vue-awesome-swiper';
+//import VueAwesomeSwiper from 'vue-awesome-swiper'
 //import 'swiper/swiper-bundle.css'
 import { Swiper, Navigation, Pagination} from 'swiper';
 import 'swiper/swiper-bundle.min.css';
@@ -47,7 +47,13 @@ animScroll.addEventListener('DOMLoaded', function () {
 Vue.component('Heptagons',require('./components/Heptagons.vue').default);
 
 Swiper.use([Navigation, Pagination]);
-  
+
+const mob = (res) => res >= document.body.clientWidth;  
+const elementInViewport = (el) => {
+    var bounds = el.getBoundingClientRect();
+    return ([(bounds.top + bounds.height > 0) && (window.innerHeight - bounds.top > 0), bounds]);
+}
+
 
 const app = new Vue({
     el: '#app',
@@ -69,13 +75,14 @@ const app = new Vue({
         const sovetySwiper = new Swiper('.swiper-container', {
             loop: true,
             pagination: {
-                el: '.swiper-pagination'
+                el: '.swiper-pagination',
+                clickable: true,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             } 
-        })
+        });
     }
 }); 
 
