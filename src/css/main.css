@@ -235,6 +235,60 @@ path{-webkit-transition: fill 400ms ease;-o-transition: fill 400ms ease;transiti
 }
 
 @media(max-width:768px){
+    body{font-size: 38px;} 
+    p {line-height: 1.145;}
+    ul li{padding-left: 16.6%;line-height: 1.15;}
+    ul li:before{width: 66px;height: 66px;left: 0;top: 5px;}
+    .flex-spb-t,.flex-spb-c{flex-direction:column}
+    .flex-spb-t>div,.flex-spb-c>div{width:100%!important;max-width: 100%!important;}
     #heptagons1{height: 300px;padding-top: 0;}
-    #heptagons1 svg{position: relative!important; top:initial!important; left:initial!important}
+    .heptagons-list svg{max-width: 75%;transition: .3s;}
+    .heptagons-list .swiper-slide-next svg{transform: scale(1.5);}
+    #heptagons1 svg, 
+    #heptagons3 svg, 
+    #heptagons4 svg{position: relative!important; top:initial!important; left:initial!important}
+    section, header{padding: 0 45px;} 
+    .logo-aerius{width: 174px;height: 72px;padding: 17px 14px 16px 22px;margin: 0px 0 0 0;} 
+    .logo-bayer{width: 90px;height: 87px;margin: 16px 0 17px 111px;} 
+    .logo-lenta{width: 157px;height: 32px;margin-top: -13px;} 
+    h1{font-size: 46px;margin: 61px 0 559px 0;width: 185%;} 
+    h2{font-size: 46px;line-height: 1.15;margin-bottom: 48px;} 
+    h3{font-size: 43px;margin-bottom: 112px;} 
+    h2>.red{font-size: 55px;} 
+    #sec1{flex-direction: column;}
+    #sec1 .img-wrap,#sec1 .text-wrap{width: 100%;}
+    #sec1 > .img-wrap > .text-wrap{padding: 94px 0 0 0;}
+    #top-head{width: 78%;margin: 0;position: absolute;top: -1253px;right: -66px;}
+    #sec3 .text-wrap{max-width: 100%!important;}
+    #sec3 .text-wrap.block-1{margin-bottom: 106px;}
+    #sec3 .text-wrap.block-3{margin-left: 0}
+    #sec3 .text-wrap.block-4{padding-left: 0}
+    .with-num {padding-left: 165px;}
+    .with-num .num {top: -23px;left: 40px;}
+    .angle-tl::after {width: 75px;height: 50px;left: -31px;top: -14px;background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 71 40' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='1.5'%3E%3Cpath d='M1 39L19 1h51' fill='none' stroke='rgb(217,27,26)' stroke-width='3'/%3E%3C/svg%3E");}
+    #sec4 .text-wrap{max-width: 100%}
+    .swiper-slide{text-align:center;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
