@@ -19,7 +19,8 @@
     "scrollmagic-plugin-gsap": "^1.0.4",
     "swiper": "^6.1.1",
     "vue": "^2.6.11",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue-awesome-swiper": "^4.1.1",
+    "vuebar": "0.0.20"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
